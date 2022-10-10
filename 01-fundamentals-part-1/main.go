@@ -39,10 +39,12 @@ func main() {
 	fmt.Println(cap(testSlice))
 }
 
+// Função publica
 func Soma(a int, b int) int {
 	return a + b
 }
 
+// Função privada
 func soma(a int, b int) int {
 	return a + b
 }
