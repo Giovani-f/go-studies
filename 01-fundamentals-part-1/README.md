@@ -26,21 +26,21 @@ No Go, há dois modos de declarar uma variável.
 - Para uma função/variável ser publica a primeira letra dela deve ser maiúscula. Exemplo:
 
 ``` Go
-  ResultadoSoma := soma(1, 2)
+ResultadoSoma := soma(1, 2)
 
-  func Soma(a int, b int) int {
-	  return a + b
-  }
+func Soma(a int, b int) int {
+  return a + b
+}
 ```
 
 - Para uma função/variável ser privada a primeira letra dela deve ser minúscula. Exemplo:
 
 ``` Go
-  resultadoSoma := soma(1, 2)
+resultadoSoma := soma(1, 2)
 
-  func soma(a int, b int) int {
-	  return a + b
-  }
+func soma(a int, b int) int {
+  return a + b
+}
 ```
 
 ## Tipo any no GO
@@ -63,5 +63,31 @@ func main() {
     "nome": "Aspas",
     "idaide": 19,
   }
+}
+```
+
+## Arrays/Slices
+
+A diferença entre array e slice é que um Array possui um tamanho definido, já um slice possui um tamanho indefinido.
+
+### Definindo um Array
+
+```GO
+func main() {
+  var testArray [4]string = [4]string{"Carro", "Moto", "Bicicleta", "Patins"}
+  fmt.Println(len(testArray))
+  fmt.Println(cap(testArray)) // mostra a capacidade de um slice/array
+}
+```
+
+### Definindo um Slice
+
+O slice irá crescendo conforme a quantidade de valores que forem colocados nele.
+
+```GO
+func main() {
+  var testArray []string = []string{"Carro", "Moto", "Bicicleta", "Patins", "Skate"}
+  fmt.Println(len(testArray))
+  fmt.Println(cap(testArray)) // mostra a capacidade de um slice/array
 }
 ```

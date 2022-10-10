@@ -27,6 +27,16 @@ func main() {
 		"idaide": 19,
 	}
 	fmt.Printf("%T", testJson)
+
+	// declaração de array
+	var testArray [4]string = [4]string{"Carro", "Moto", "Bicicleta", "Patins"}
+	fmt.Println(len(testArray))
+	fmt.Println(cap(testArray))
+
+	// declaração de slice
+	var testSlice [4]string = [4]string{"Carro", "Moto", "Bicicleta", "Patins"}
+	fmt.Println(len(testSlice))
+	fmt.Println(cap(testSlice))
 }
 
 func Soma(a int, b int) int {
