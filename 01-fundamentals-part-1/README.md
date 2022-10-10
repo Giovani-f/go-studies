@@ -91,3 +91,34 @@ func main() {
   fmt.Println(cap(testArray)) // mostra a capacidade de um slice/array
 }
 ```
+
+## Structs
+
+Structs em Go são como *Objetos* em outras liguagens como no *Typescript* e são definidos da seguinte forma:
+
+### Definindo uma struct
+
+```GO
+type User struct {
+  name string
+  age int
+}
+```
+
+### Utilizando uma struct
+
+```GO
+func main() {
+  var user User = User{
+    name: "Neymar",
+    age: 30,
+  }
+
+  fmt.Print(user)
+}
+
+type User struct {
+  name string
+  age int
+}
+```

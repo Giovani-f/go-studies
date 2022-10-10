@@ -19,14 +19,14 @@ func main() {
 
 	//tipo any
 	var testAny interface{}
-	fmt.Printf("%T", testAny)
+	fmt.Println(testAny)
 
 	//JSON com valores any
 	testJson := map[string]interface{}{
 		"nome":   "Aspas",
 		"idaide": 19,
 	}
-	fmt.Printf("%T", testJson)
+	fmt.Println(testJson)
 
 	// declaração de array
 	var testArray [4]string = [4]string{"Carro", "Moto", "Bicicleta", "Patins"}
